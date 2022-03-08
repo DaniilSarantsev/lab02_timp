@@ -1,10 +1,8 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 int main() {
-string name;
-cout << "Name: "; std::cin >> name;
-cout << "Hello, World from " << name << endl;
+std::string name; //name of user
+std::cout << "Name: "; std::cin >> name; //enter a name of user
+std::cout << "Hello, World from " << name << std::endl;
 }
