@@ -1,6 +1,6 @@
 # lab02_timp
 First commit
-Part I
+# Part I
 
 ПУНКТ 1.
 Создайть пустой репозиторий на сервисе github.com (или gitlab.com, или bitbucket.com).
@@ -43,7 +43,7 @@ vi hello_world.cpp
 <img width="825" alt="10" src="https://user-images.githubusercontent.com/91692911/157232934-af95f3dc-1d00-4f6e-b3e1-1729bda2adad.png">
 
 
-Part II
+# Part II
 
 ПУНКТ 1.
 В локальной копии репозитория создайть локальную ветку patch1.
@@ -89,3 +89,56 @@ commit, push.
 ПУНКТ 12.
 Удалить локальную ветку patch1.
 <img width="1440" alt="8" src="https://user-images.githubusercontent.com/91692911/157311336-e07791df-6ec1-4571-a8b8-b8c120e6a75f.png">
+
+# Part III
+
+ПУНКТ 1.
+Создайть новую локальную ветку patch2.
+<img width="1440" alt="1" src="https://user-images.githubusercontent.com/91692911/157379932-7674a297-d041-48cc-82f5-6192a63e4643.png">
+
+ПУНКТ 2.
+Изменить code style с помощью утилиты clang-format. Например, используя опцию -style=Mozilla.
+
+clang-format -i -style=Mozilla hello_world.cpp
+
+ПУНКТ 3.
+commit, push, создайть pull-request patch2 -> master.
+<img width="1440" alt="3" src="https://user-images.githubusercontent.com/91692911/157380055-b68b0154-725c-410d-bf53-d9b079613c7e.png">
+
+ПУНКТ 4.
+В ветке master в удаленном репозитории изменить комментарии, например, расставьте знаки препинания, переведите комментарии на другой язык.
+
+ПУНКТ 5.
+Убедиться, что в pull-request появились конфликтны.
+<img width="712" alt="4" src="https://user-images.githubusercontent.com/91692911/157380149-d43039c9-b16f-469f-9237-6ea6e538bf23.png">
+
+ПУНКТ 6.
+Для этого локально выполните pull + rebase (точную последовательность команд, следует узнать самостоятельно). Исправьте конфликты.
+<img width="1440" alt="6" src="https://user-images.githubusercontent.com/91692911/157380312-b2166d73-e509-46f7-897f-4fbd48bc4b88.png">
+<img width="1440" alt="7" src="https://user-images.githubusercontent.com/91692911/157380319-550e686f-b260-42dc-870b-50afb0e176f9.png">
+
+ПУНКТ 7.
+Сделайть force push в ветку patch2.
+
+git push -f origin patch2
+
+ПУНКТ 8.
+Убедиться, что в pull-request пропали конфликтны.
+<img width="1016" alt="8" src="https://user-images.githubusercontent.com/91692911/157380411-c6eea4a7-d4f9-46f7-a20c-cdfe3f9021db.png">
+
+ПУНКТ 9.
+Вмержить pull-request patch2 -> master.
+<img width="1440" alt="Снимок экрана 2022-03-09 в 08 40 14" src="https://user-images.githubusercontent.com/91692911/157380447-02d32ead-1792-4e2f-8e48-2849d231b007.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
